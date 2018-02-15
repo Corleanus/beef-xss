@@ -30,11 +30,17 @@ end
 gem 'ansi'
 gem 'term-ansicolor', :require => 'term/ansicolor'
 gem 'dm-core'
-gem 'json'
+#gem 'json'
+platforms :ruby do
+  gem 'json'
+end
+platforms :mswin, :mingw do
+  gem 'json_pure'
+end
 gem 'data_objects'
-gem 'dm-sqlite-adapter'  # SQLite support
+#gem 'dm-sqlite-adapter'  # SQLite support
 #gem dm-postgres-adapter # PostgreSQL support
-#gem dm-mysql-adapter    # MySQL support
+gem #dm-mysql-adapter#    # MySQL support
 gem 'parseconfig'
 gem 'erubis'
 gem 'dm-migrations'
