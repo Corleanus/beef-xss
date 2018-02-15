@@ -40,7 +40,7 @@ end
 gem 'data_objects'
 #gem 'dm-sqlite-adapter'  # SQLite support
 #gem dm-postgres-adapter # PostgreSQL support
-gem #dm-mysql-adapter#    # MySQL support
+gem 'dm-mysql-adapter'    # MySQL support
 gem 'parseconfig'
 gem 'erubis'
 gem 'dm-migrations'
